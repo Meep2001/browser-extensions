@@ -5,7 +5,7 @@ const body = document.querySelector('body');
 
 const fetchMeaning = async (word) => {
   const response = await fetch(`${DICTIONARY_URL}${word}`);
-  if (response.status !== 200) throw new Error('Word not found');
+  if (response.status !== 200) throw new Error(`${word} : Word not found`);
   const result = await response.json();
   return result;
 }
