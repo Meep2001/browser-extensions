@@ -1,0 +1,13 @@
+body {
+    width: 300px;
+}
+.word, .pos {
+    text-transform: capitalize;
+}
+.error {
+    color: red;
+}
+.italic {
+    font-style: italic;
+}
+

@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Dictionary extension",
+    "description": "Find meanings of words easily",
+    "version": "1.0",
+    "icons": {
+        "16": "images/icon_16px.png",
+        "24": "images/icon_24px.png",
+        "32": "images/icon_32px.png"
+    },
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+          "js": ["scripts/index.js"],
+          "matches": ["<all_urls>"]
+        }
+      ]
+}
